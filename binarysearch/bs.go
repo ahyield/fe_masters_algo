@@ -6,7 +6,7 @@ func BinarySearch(arr []int, num int) (int, error) {
 	low := 0
 	high := len(arr) - 1
 
-	for i := low; low <= high; i++ {
+	for low <= high {
 		marker := high - low/2
 		guess := arr[marker]
 
